@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple intrest by use-prompt</title>
+    <style>
+        span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function doSome(){
+            let p=document.getElementById("p").value;
+            let t=document.getElementById("t").value;
+            let r=document.getElementById("r").value;
+            if(p=="" || t=="" || r==""){
+                document.getElementById("span1").innerHTML="* Please enter price";
+                document.getElementById("span2").innerHTML="* Please enter time";
+                document.getElementById("span3").innerHTML="* Please enter rate";
+            }
+            else if(p==""){
+                document.getElementById("span1").innerHTML="Please enter price";
+            }
+            else if(t==""){
+                document.getElementById("span2").innerHTML="Please enter time";
+            }
+            else if(r==""){
+                document.getElementById("span3").innerHTML="Please enter rate";
+            }
+            else{
+                let intrest=(Number(p)*Number(t)*Number(r))/100;
+                alert("Simple Intrest is: "+intrest);
+            }
+        }
+        function doClear(){
+            let res=confirm("Are you sure you want to clear the input fields?");
+            if(res==true){
+                document.getElementById("p").value="";
+                document.getElementById("t").value="";
+                document.getElementById("r").value="";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- <button onclick="simpleIntrest()">click</button>
+    <script>
+        function simpleIntrest(){
+            let p=prompt('Enter the price  p:','')
+            let t=prompt('Enter the time t:','')
+            let r=prompt('Enter the required r:','')
+            let intrest=(eval(p)*eval(t)*eval(r))/100
+            alert(intrest)
+        }
+       
+    </script> -->
+    <table align="center" cellpadding="10" cellspacing="0">
+        <caption>Simple Intrest </caption>
+        <tr>
+            <td><label for="p">Price:</label></td>
+            <td><input type="number" id="p" name="price"></td>
+            <td><span id="span1">*</span></td>
+        </tr>
+        <tr>
+            <td><label for="t">Time:</label></td>
+            <td><input type="number" id="t" name="time"></td>
+            <td><span id="span2">*</span></td>
+        </tr>
+        <tr>
+            <td><label for="r">Rate:</label></td>
+            <td><input type="number" id="r" name="rate"></td>   
+            <td><span id="span3">*</span></td>
+        </tr>
+        <tr>
+            <td><button onclick="doSome()">Calculate</button></td>
+            <td><button type="reset" onclick="doClear()">Clear</button></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition of two numbers use of dom function</title>
+    <style>
+        span{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    
+    <script>
+        function doSome(){
+            let n1=document.getElementById("id1").value;
+            let n2=document.getElementById("id2").value;
+            if(n1==""||n2==""){
+
+                // alert("Please enter first number");
+                // return;
+                document.getElementById("span1").innerHTML="* Please enter first number";
+                document.getElementById("span2").innerHTML="* Please enter second number";
+            }
+            else if(n1==""){
+                // alert("Please enter first number");
+                // return;
+                document.getElementById("span1").innerHTML="Please enter first number";
+            }
+            else if(n2==""){
+                // alert("Please enter second number");
+                // return;
+                document.getElementById("span2").innerHTML="Please enter second number";
+            }
+            else{
+                let addition=Number(n1)+Number(n2); 
+                alert("Addition is: "+addition);
+            } 
+        }
+        function doClear(){
+           let res=confirm("Are you sure you want to clear the input fields?");
+           if(res==true){
+                document.getElementById("id1").value="";
+                document.getElementById("id2").value="";
+           }
+           
+        }
+      
+    </script>
+</head>
+<body>
+    <table align="center"  cellpadding="10" cellspacing="0">
+        <caption>Addition of number</caption>
+        <tr>
+            <td><label for="id1">First Number:</label></td>
+            <td><input type="number" id="id1" name="first_number"></td>
+            <td><span id="span1">*</span></td>
+        </tr>
+        <tr>
+            <td><label for="id2">First Number:</label></td>
+            <td><input type="number" id="id2" name="second_number"></td>
+            <td><span id="span2">*</span></td>
+        </tr>
+        <tr>
+            <td><button onclick="doSome()">ADD</button></td>
+            <td><button type="reset" onclick="doClear()">CLEAR </button></td>
+        </tr>
+    </table>
+</body>
+</html>

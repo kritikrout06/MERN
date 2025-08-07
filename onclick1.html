@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick event - describe</title>
+    <style>
+        #id1{
+            background-color: brown;
+        }
+        #p1{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="dodomthing()">Click</button>
+    <button ondblclick="doFunney()" id="id1">Fun Mood</button>
+    <p id="p1" onmouseenter="cheangeColor()" onmouseleave="saySomthing()">Good Morning My Code Family</p>
+    <script>
+       function dodomthing(){
+        alert("Wellcome to my world 😜")
+       }
+       function doFunney(){
+         document.getElementById('id1').style.backgroundColor="blue";
+         alert("Akuna Mataata 😜")
+       }
+       function cheangeColor(){
+        document.getElementById('p1').innerHTML="Good evening all of my code family"
+        document.getElementById('p1').style.backgroundColor="aqua";
+       }
+       function saySomthing(){
+        document.getElementById('p1').innerHTML="Good Night All of my code Family"
+        document.getElementById('p1').style.backgroundColor="green";
+       }
+    </script>
+</body>
+</html>

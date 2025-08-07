@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>average of six number</title>
+    <style>
+        span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+          function averageNumber(){
+            let a=document.getElementById("a").value;
+            let b=document.getElementById("b").value;
+            let c=document.getElementById("c").value;
+            let d=document.getElementById("d").value;
+            let e=document.getElementById("e").value;
+            let f=document.getElementById("f").value;
+            if(a=="" || b=="" || c=="" || d=="" || e=="" || f==""){
+                document.getElementById("span1").innerHTML="* Please enter first number";
+                document.getElementById("span2").innerHTML="* Please enter second number";
+                document.getElementById("span3").innerHTML="* Please enter third number";
+                document.getElementById("span4").innerHTML="* Please enter fourth number";
+                document.getElementById("span5").innerHTML="* Please enter fifth number";
+                document.getElementById("span6").innerHTML="* Please enter sixth number";
+            }
+            else if(a==""){
+                document.getElementById("span1").innerHTML="Please enter first number";
+            }
+            else if(b==""){
+                document.getElementById("span2").innerHTML="Please enter second number";
+            }
+            else if(c==""){
+                document.getElementById("span3").innerHTML="Please enter third number";
+            }
+            else if(d==""){
+                document.getElementById("span4").innerHTML="Please enter fourth number";
+            }
+            else if(e==""){
+                document.getElementById("span5").innerHTML="Please enter fifth number";
+            }
+            else if(f==""){
+                document.getElementById("span6").innerHTML="Please enter sixth number";
+            }
+            else{
+                let average=(Number(a)+Number(b)+Number(c)+Number(d)+Number(e)+Number(f))/6;
+                alert("Average is: "+average);
+            }
+        }
+        function doClear(){
+            let res=confirm("Are you sure you want to clear the input fields?");
+            if(res==true){
+                document.getElementById("a").value="";
+                document.getElementById("b").value="";
+                document.getElementById("c").value="";
+                document.getElementById("d").value="";
+                document.getElementById("e").value="";
+                document.getElementById("f").value="";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- <button onclick="averageNumber()">Click</button>
+    <script>
+        function averageNumber(){
+            let a=prompt('Enter the value of a:','')
+            let b=prompt('Enter the value of b:','')
+            let c=prompt('Enter the value of c:','')
+            let d=prompt('Enter the value of d:','')
+            let e=prompt('Enter the value of e:','')
+            let f=prompt('Enter the value of f:','')
+            let average=(eval(a)+eval(b)+eval(c)+eval(d)+eval(e)+eval(f))/6
+            alert(average)
+        }
+      
+    </script> -->
+    <table align="center" cellpadding="10" cellspacing="0">
+        <caption>Aveage of Number</caption>
+        <tr>
+            <td><label for="a">First Number:</label></td>
+            <td><input type="number" id="a" name="first_number"></td>
+            <td><span id="span1">*</span></td>
+        </tr>
+        <tr>
+            <td><label for="b">Second Number:</label></td>
+            <td><input type="number" id="b" name="second_number"></td>
+            <td><span id="span2">*</span></td>
+        </tr>
+        <tr>
+            <td><label for="c">Third Number:</label></td>
+            <td><input type="number" id="c" name="third_number"></td>
+            <td><span id="span3">*</span></td>
+        </tr>
+        <tr>
+            <td><label for="d">Fourth Number:</label></td>
+            <td><input type="number" id="d" name="fourth_number"></td>
+            <td><span id="span4">*</span></td>
+        </tr>
+        <tr>
+            <td><label for="e">Fifth Number:</label></td>
+            <td><input type="number" id="e" name="fifth_number"></td>
+            <td><span id="span5">*</span></td>
+        </tr>
+        <tr>
+            <td><label for="f">Sixth Number:</label></td>
+            <td><input type="number" id="f" name="sixth_number"></td>
+            <td><span id="span6">*</span></td>
+        </tr>
+        <tr>
+            <td><button onclick="averageNumber()">ADD</button></td>
+            <td><button type="reset" onclick="doClear()">CLEAR </button></td>
+        </tr>
+    </table>
+</body>
+</html>

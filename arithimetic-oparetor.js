@@ -1,0 +1,12 @@
+var a=20;
+const b=30;
+var c=a+b;
+console.log(c);
+var c=a-b;
+console.log(c);
+var c=a*b;
+console.log(c);
+var c=Math.floor(a/b);
+console.log(c);
+var c=a%b;
+console.log(c);

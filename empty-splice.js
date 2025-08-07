@@ -1,0 +1,13 @@
+let month=[2,3,4,5,6]
+month.splice(0,0,1)
+console.log(month)
+month.splice(6,0,7,8,9,10,11,12)
+console.log(month)
+month.splice(9,0,91,92,93)
+console.log(month)
+month.splice(0,3)
+console.log(month)
+month.splice(6,3)
+console.log(month)
+month.splice(0,2,1,2,3)
+console.log(month)
