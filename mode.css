@@ -1,0 +1,29 @@
+tr{
+    background-color: rgb(243, 246, 247);
+    color:  rgb(243, 246, 247);
+    padding: 20px;
+}
+.first{
+    background-color:blue;
+    color:blue;
+    padding: 20px;
+    border: 2px solid blue;
+}
+.second{
+    background-color:black;
+    color:black;
+    padding: 20px;
+    border: 2px solid green;
+}
+.third{
+    background-color:red;
+    color:red;
+    padding: 20px;
+    border: 2px solid red;
+}
+.forth{
+    background-color:yellow;
+    color:yellow;
+    padding: 20px;
+    border: 2px solid green;
+}

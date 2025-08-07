@@ -1,0 +1,54 @@
+.first{
+    background-color: red;
+    color:black;
+    padding: 20px;
+    border: 2px solid blue;
+}
+.second{
+    background-color: green;
+    color:black;
+    padding: 20px;
+    border: 2px solid blue;
+}
+.third{
+    background-color: yellow;
+    color:black;
+    padding: 20px;
+    border: 2px solid blue;
+}
+.forth{
+    background-color:blue;
+    color:black;
+    padding: 20px;
+    border: 2px solid blue;
+}
+.fifth{
+    background-color: gray;
+    color:black;
+    padding: 20px;
+    border: 2px solid blue;
+}
+.sixth{
+    background-color: purple;
+    color:black;
+    padding: 20px;
+    border: 2px solid blue;
+}
+.seventh{
+    background-color: cyan;
+    color:black;
+    padding: 20px;
+    border: 2px solid blue;
+}
+.eighth{
+    background-color: rgb(49, 202, 146);
+    color:black;
+    padding: 20px;
+    border: 2px solid blue;
+}
+.nine{
+    background-color: rgb(62, 128, 198);
+    color:black;
+    padding: 20px;
+    border: 2px solid blue;
+}

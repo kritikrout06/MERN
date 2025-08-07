@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details form</title>
+</head>
+<body style="background-color:#cce5a9; padding: 20px;">
+    <fieldset>
+        
+        <h3>Step 1: Your details</h3>
+        <form action="script.js" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="First and Last name" required><br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="abc1@gmail.com" required><br><br>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br><br>
+            <h3>Step 2: Delivery address</h3>
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="123 Main St, City, State, Zip" required><br><br>
+            <label for="post">Post code</label>
+            <input type="number" id="post" name="post" placeholder="12345" required><br><br>
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <option value="india">India</option><br><br>
+                </select>
+        
+            <h3>Step 3: Card details</h3>
+          <fieldset>
+             <legend>Card type</legend>
+            <label>
+                <input type="checkbox" name="card_type" value="visa" required>VISA
+            </label>
+            <label >
+                    <input type="checkbox" name="card_type" value="amex">AmEx
+                </label>
+            <label>
+                <input type="checkbox" name="card_type" value="mastercard">MasterCard   
+                </label>
+          </fieldset><br>
+          <label for="card number">Card number</label>
+          <input type="number" id="card_number" name="card_number" placeholder="1234 5678 9012 3456" required><br><br>
+          <label for="code">Security code</label>
+          <input type="number" id="code" name="code" placeholder="123" required><br><br>
+          <label for="card name">Name on Card</label>
+            <input type="text" id="card_name" name="card_name" placeholder="John Doe" required><br><br>
+            <input type="submit" value="BUY IT!" style=" background-color: blue; color: black;">
+        </form>
+    </fieldset>
+</body>
+</html>

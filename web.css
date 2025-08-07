@@ -1,0 +1,60 @@
+ body {
+            font-family: Arial, sans-serif;
+            background: url("nutral.jpg") no-repeat center center fixed;
+            background-size: cover;
+            border-radius: 8px;
+            margin: 0;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        header a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .main {
+            flex: 3;
+        }
+        .sidebar {
+            flex: 1;
+            background: #333;
+            border-radius: 8px;
+            color: white;
+            padding: 20px;
+            margin-left: 20px;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .card {
+            border: 1px solid black;
+            width: 30%;
+            
+        }
+        .card h2 {
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin: 0;
+        }
+        .card p {
+            padding: 10px;
+            margin: 0;
+        }
+        

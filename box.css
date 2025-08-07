@@ -1,0 +1,53 @@
+ body {
+      background-color: #d3d3d3; 
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin: 10% 0 0 20%;
+    }
+    .square {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+    }
+    .red {
+      background-color: red;
+      top: 0;
+      left: 0;
+    }
+    .pink {
+      background-color: pink;
+      top: 50px;
+      left: 50px;
+    }
+    
+    .yellow {
+      background-color: gold;
+      top: 100px;
+      left: 100px;
+    }
+   
+    .main {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin: 15% 0 0 -30%;
+    }
+    .green {
+      background-color: green;
+      top: 0px;
+      left: 100px;
+      
+    }
+     .blue {
+      background-color: dodgerblue;
+      top: 50px;
+      left: 150px;
+    }

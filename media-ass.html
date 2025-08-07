@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media tag use</title>
+    <style>
+        body{
+            display: flex;
+            justify-content:flex-start;
+            border: 2px solid black;
+            width: 100%;
+            
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            border: 2px inset black;
+        }
+        .one{
+            background-color: aqua;
+        }
+        .two{
+            background-color: yellow;
+        }
+        .third{
+            background-color: aquamarine;
+        }
+        .four{
+            background-color:antiquewhite ;
+        }
+        @media (max-width:720px){
+            body{
+                flex-direction: column;
+                background-color: brown;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="one">ONE</div>
+    <div class="two">TWO</div>
+    <div class="third">THREE</div>
+    <div class="four">FOUR</div>
+</body>
+</html>
