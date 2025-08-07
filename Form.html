@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form.js">
+    <title>Interactive HTML Form</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Registration Form</h1>
+            <form id="registrationForm">
+                <!-- Personal Information -->
+                <div class="form-group">
+                    <label for="fullName" class="required">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <div class="error" id="fullName-error">Please enter your full name</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="required">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error" id="email-error">Please enter a valid email address</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="required">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="error" id="password-error">Password must be at least 8 characters</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword" class="required">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <div class="error" id="confirmPassword-error">Passwords do not match</div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890">
+                    <div class="error" id="phone-error">Please enter a valid phone number (123-456-7890)</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate">Date of Birth</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+
+                <!-- Preferences -->
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say">
+                            <label for="prefer-not-to-say">Prefer not to say</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="">Select your country</option>
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="au">Australia</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Interests (Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="technology" name="interests" value="technology">
+                            <label for="technology">Technology</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="sports" name="interests" value="sports">
+                            <label for="sports">Sports</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="music" name="interests" value="music">
+                            <label for="music">Music</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="travel" name="interests" value="travel">
+                            <label for="travel">Travel</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="cooking" name="interests" value="cooking">
+                            <label for="cooking">Cooking</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="form-group">
+                    <label for="bio">Short Bio</label>
+                    <textarea id="bio" name="bio" placeholder="Tell us about yourself..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="profilePic">Profile Picture</label>
+                    <input type="file" id="profilePic" name="profilePic" accept="image/*">
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms" class="required">I agree to the Terms and Conditions</label>
+                    <div class="error" id="terms-error">You must agree to the terms and conditions</div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+
+            <div class="form-footer">
+                Already have an account? <a href="#">Sign in</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

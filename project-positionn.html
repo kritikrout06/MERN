@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uses of position property:Assignment</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(32, 30, 30);
+            box-sizing: border-box;
+           
+        }
+        .main{
+           border: 2px solid black;
+           width: 100%;
+           height: 100vh;
+           margin: 10px;
+        }
+        header{
+            background-color: rgb(135, 107, 188);
+            height: 50px;
+            padding: 30px;
+            
+        }
+        nav a{
+            font-size: 20px;
+            border: 2px solid blanchedalmond;
+            color: black;
+            background-color: grey;
+            border-radius: 20px;
+            text-decoration: none;
+            padding: 10px 10px;
+            margin-top: 20px;
+            
+        }
+       
+        .cros{
+            display: flex;
+            justify-content:space-evenly;
+            background-color: green;
+            height: 500px;
+            width: 100%;
+            
+        }
+        .first ,.second{
+            border: 2px solid yellow;
+            width: 350px;
+            height: 250px;
+            margin-top: 50px;
+           
+
+        }
+        .first
+        {
+         float: left;
+         background-color: palevioletred;
+
+        }
+        .second{
+            float: right;
+            background-color: blue;
+           
+        }
+        .mid{
+            display: flex;
+            justify-content: center;
+            border:2px solid rgb(245, 244, 244);
+            background-color: aliceblue;
+            width: 400px;
+            height: 100px;
+            margin:20px 150px 20px 350px;
+            border-radius: 20px;
+            
+        }
+        .mid p{
+            font-size: 20px;
+            position: relative;
+            top:30px;
+            
+        }
+        .last{
+            position: sticky;
+            margin-right: 20px ;
+            float: right;
+            border-radius: 100%;
+            width: 60px;
+        }
+        .last img{
+            border-radius: 100%;
+            padding: 2px;
+        }
+        footer{
+    background-color: rgb(26, 43, 57);
+    color: white;
+    height: 50px;
+    text-align: center;
+    padding: 10px 20px;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <nav>
+                <a href="#service1">Home</a>
+                <a href="#service2">About</a>
+                <a href="#service3">Contact</a>
+            </nav>
+        </header>
+       <div class="cros">
+         <div class="first"></div>
+        <div class="second"></div>
+       </div>
+       <div class="mid">
+        <p>Wellcome to Sigma web devlopment course </p>
+       </div>
+       <div class="last">
+        <img src="WhatsApp Image 2025-02-02 at 10.18.59_RUDRAJIT.jpg" alt="" width="60px">
+       </div>
+       <footer>@2025 Sigma Web Devlopment.All Right Reserved.</footer>
+    </div>
+</body>
+</html>
